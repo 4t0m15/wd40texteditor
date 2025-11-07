@@ -1,10 +1,8 @@
-//use crossterm::terminal::disable_raw_mode;
-//use crossterm::terminal::enable_raw_mode;
-//use std::io::{self, Read};
-//no longer used moved to editor.rs
+#![warn(clippy::all, clippy::pedantic, clippy::restruction)]
 mod editor;
-use editor::Editor;
+mod filetype;
+mod highlighting;
+mod row;
+mod terminal;
 
-fn main() {
-    Editor::default().run();
-}
+fn main() {}
